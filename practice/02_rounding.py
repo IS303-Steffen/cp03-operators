@@ -27,8 +27,14 @@ clear_screen()
 fOdd = 1.5
 fEven = 2.5
 
-print("rounding odd", round(fOdd))
-print("rounding even", round(fEven))
+# print("rounding odd", round(fOdd))
+# print("rounding even", round(fEven))
+
+fOdd = 1.65
+fEven = 2.75
+
+# print("rounding odd", round(fOdd,1))
+# print("rounding even", round(fEven, 1))
 
 # Be aware if this, but don't worry too much about it.
 

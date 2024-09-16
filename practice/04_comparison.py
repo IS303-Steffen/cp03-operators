@@ -51,5 +51,5 @@ ex2 = 'A'
 
 # PRACTICE
 # check if 10 is not equal to 5 + 5
-print(10 != 5+5)
+
 
