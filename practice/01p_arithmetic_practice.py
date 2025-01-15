@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,30 +12,34 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ===============================
+# PRACTICE - ARITHEMTIC OPERATORS
+# ===============================
 
 
 # PRACTICE 1: 
-''' Imagine you're a teacher, and you have a jar of candies
-    that you want to distribute equally among your students.
-    Candies can't be cut, you can only give whole candies.
+'''
+Imagine you're a teacher, and you have a jar of candies that you want to
+distribute equally among your students. Candies can't be cut, you can only
+give whole candies.
 
-    Scenario:
+Scenario:
 
-    You have 47 candies.
-    You have 8 students.
-    You want to know how many candies each student will get
-    if they are distributed evenly.
+You have 47 candies.
+You have 8 students.
 
-    Make variables representing the number of candies
-    and the number of students.
-    Print out how many candies each student can get '''
+You want to know how many candies each student will get if they are
+distributed evenly.
+
+Make variables representing the number of candies and the number of students.
+Print out how many candies each student can get
+'''
 
 
 
-# Practice 2:
-''' The exact same scenario as practice 1, but print out
-    how many candies you will have left after distributing the candies
-    out equally among the 8 students.   '''
+
+# PRACTICE 2:
+'''
+Use the exact same scenario as practice 1, but print out how many candies you
+will have left after distributing the candies out equally among the 8 students.
+'''

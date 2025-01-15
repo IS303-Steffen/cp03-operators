@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,51 +12,73 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
-
-# Comparisons
-# Often bad in real life but very useful in programming!
+# ====================
+# COMPARISON OPERATORS
+# ====================
 
 '''
-    >	iNum1 > iNum2   Greater Than
-    <	iNum1 < iNum2	Less Than
-    >=	iNum1 >= iNum2	Greater Than or Equal to
-    <=	iNum1 <= iNum2	Less Than or Equal to
-    !=	iNum1 != iNum2	Not Equal to
-    ==	iNum1 == iNum2	Equal to (remember = is assignment, == is a comparison)
+OVERVIEW
+--------
+Comparisons: often bad in real life but very useful in programming!
+
+>   Greater Than
+    num_1 > num_2
+
+<   Less Than
+    num_1 < num_2
+
+>=	Greater Than or Equal to
+    num_1 >= num_2	
+
+<=	Less Than or Equal to
+    num_1 <= num_2	
+
+!=	Not Equal to
+    num_1 != num_2	
+
+==	Equal to
+    num_1 == num_2
+
+    Remember: = is for assignment, == is for comparison)
+
+These will be much more useful once we start using if statements. But for now
+we can get boolean (True/False) results from using comparison operators.
+
 '''
-# These are much more useful in Chapter 6
 
-# But you can get simple true / false statements from them.
-# Whenever you use a comparison, think of it as a function and the output
-# is a boolean (True or False)
-x = 10
-y = 11
 
-print (x < y)
 
-# sometimes you want to manipulate the variables before comparing them.
-# example with letters
-ex1 = 'a'
-ex2 = 'A'
+# 1. COMPARISON OPERATORS WITH NUMBERS
+# See whether num_1 is less than num_2, and print out the result. Try using other
+# comparison operators.
+num_1 = 10
+num_2 = 11
 
-# lowercase and uppercase are different
-print(ex1 == ex2)
+print(num_1 < num_2)
 
-# You can use the upper (or lower) function to transform the output.
-print(ex1.upper())
-print(ex2.upper())
+# 2. COMPARISONS WITH STRINGS
+# Check whether str_1 and str_2 are the same. Remember the difference between
+# = and ==. 
 
-# Note, this doesn't change the original values of the variables:
-print("this is still false")
-print("comparison with original variables", ex1 == ex2)
+str_1 = 'hello'
+str_2 = 'HELLO'
 
-print("but this will be true")
-print("comparison with variables with the function", ex1.upper() == ex2.upper())
+print(str_1 == str_2)
 
-# PRACTICE
-# check if 10 is not equal to 5 + 5
-print(10 != 5+5)
+'''
+USING FUNCTIONS TO TRANSFROM DURING COMPARISONS
+-----------------------------------------------
+You can use string functions like .upper() and .lower() to compare strings
+In a more natural way
+
+'''
+
+# 3. USING .upper()
+# Print out the result of using .upper() on str_1
+print(str_1.upper())
+
+# 4. USING .upper() IN COMPARISONS
+# Use .upper() on str_1 in a comparison to see if it is equal to str_2.
+
+print(str_1.upper() == str_2)
 

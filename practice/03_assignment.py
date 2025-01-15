@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,33 +12,64 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ====================
+# ASSIGNMENT OPERATORS
+# ====================
 
-# assignment means giving a variable a value:
-
-
-# remember you can update the value of the variable and use the variable on the left side too
-# this means, take whatever the value of x currently is, and add 2 to it, then make x
-# equal to that new number:
-
-
-
-# Shortcuts (compound assignment)
-# feel free to use them, but if you prefer not to don't worry about it.
 '''
-    +=	iResult += iNumber	iResult = iResult + iNumber
-    -=	iResult -= iNumber	iResult = iResult - iNumber
-    *=	iResult *= iNumber	iResult = iResult * iNumber
-    /=	iResult /= iNumber	iResult = iResult / iNumber
-    %=	iResult %= iNumber	iResult = iResult % iNumber
-    **=	iResult **= iNumber	iResult = iResult ** iNumber
-    //=	iResult //= iNumber	iResult = iResult // iNumber
+OVERVIEW
+--------
+Assignment means putting a value in a variable. We use the = for this, but it
+does NOT mean equality like in mathematics. For equality, we use another
+operator shown in the next section.
+
+The = sign just means put whatever is on the right side into the left side.
+
+store_here = put everything here into the left.
+
 '''
 
-# PRACTICE
-iPractice1 = 10
-iPractice2 = 23
-# Try making iPractice1 equal to itself multiplied by iPractice 2 using the shortcuts
-# print out the result
+# 1. ASSIGNMENT
+# Create a variable and assign it the value of 5. Print it out.
+x = 5
+print(x)
+
+
+# 2. ASSIGNING A NEW VALUE BASED ON THE OLD VALUE
+# Using the same variable you created above, set a new value equal to the 
+# current value + 2.
+
+x = x + 2
+print(x)
+
+# ================================
+# COMPOUND ASSIGNMENTS (SHORTCUTS)
+# ================================
+
+'''
++=
+    result += number	result = result + number
+-=
+    result -= number	result = result - number
+*=
+    result *= number	result = result * number
+/=
+    result /= number	result = result / number
+%=
+    result %= number	result = result % number
+**=
+    result **= number	result = result ** number
+//=
+    result //= number	result = result // number
+'''
+
+# 3. SHORTCUT ASSIGNMENT
+# Use += to make example_num equal to itself plus example_num_2. Print the 
+# result.
+example_num = 10
+example_num_2 = 3
+
+
+# 4. SHORTCUT ASSIGNMENT
+# Use *= to make example_num equal to itself times example_num_2. Print the 
+# result.
