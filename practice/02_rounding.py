@@ -1,15 +1,4 @@
-import os
-import platform
-
-def clear_screen():
-    """
-    Clears the terminal screen to make it easier to follow along with code.
-    """
-    if platform.system() == 'Windows':
-        os.system('cls')
-    else:
-        os.system('clear')
-
+from helper_functions import clear_screen
 clear_screen()
 
 # ========
@@ -43,6 +32,15 @@ example_num = 107.8456
 # Use the round() function with a negative 2nd argument to round to the 10s
 # place. Print the result.
 
+
+# ==========
+# EXTRA INFO
+# ==========
+'''
+There are some quirks about python's built in round() function. If you want more
+details, feel free to read about them below, but they aren't critical to know
+about.
+'''
 
 # 4. ROUNDING FROM .5
 # Try rounding odd_num and even_num to a whole number and print out each.
